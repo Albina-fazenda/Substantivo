@@ -1,24 +1,24 @@
 [
  {  "substantivo": "книга",
-    "genero" : "feminino",
-    "traducao" : "livro",       
+    "genero": "feminino",
+    "traducao": "livro",       
  },
   
  {  "substantivo": "стол",
-    "genero" : "masculino",
-    "traducao" : "mesa",       
+    "genero": "masculino",
+    "traducao": "mesa",       
       
  },
   
  {  "substantivo": "карандаш",
-    "genero" : "masculino",
-    "traducao" : "lapis",       
+    "genero": "masculino",
+    "traducao": "lapis",       
       
  },
   
  {  "substantivo": "письмо",
-    "genero" : "neutro",
-    "traducao" : "carta",       
+    "genero": "neutro",
+    "traducao": "carta",       
       
  } 
 ]
