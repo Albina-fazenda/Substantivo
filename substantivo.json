@@ -55,6 +55,26 @@
  {  "substantivo": "Каранда́ш",
     "genero": "masculino",
     "traducao": "Lapis"       
+ },
+ 
+ {  "substantivo": "Ме́сто",
+    "genero": "neutro",
+    "traducao": "Lugar"       
+ },
+ 
+ {  "substantivo": "Ко́мната",
+    "genero": "feminino",
+    "traducao": "Quarto"       
+ },
+ 
+ {  "substantivo": "Но́ж",
+    "genero": "masculino",
+    "traducao": "Faca"       
+ },
+ 
+ {  "substantivo": "Магази́н",
+    "genero": "masculino",
+    "traducao": "Mercado"       
  }
  
  
