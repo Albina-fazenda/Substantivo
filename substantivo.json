@@ -14,7 +14,7 @@
     "genero": "neutro",
     "traducao": "Carta"       
       
- };
+ },
  
  {  "substantivo": "Сту́л",
     "genero": "masculino",
@@ -50,7 +50,7 @@
  {  "substantivo": "Ла́мпа",
     "genero": "feminino",
     "traducao": "Lampada"       
- };
+ },
  
  {  "substantivo": "Каранда́ш",
     "genero": "masculino",
