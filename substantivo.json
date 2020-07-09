@@ -1,18 +1,61 @@
 [
- {  "substantivo": "книга",
+ {  "substantivo": "Кни́га",
     "genero": "feminino",
-    "traducao": "livro"       
+    "traducao": "Livro"       
  },
   
- {  "substantivo": "стол",
+ {  "substantivo": "Сто́л",
     "genero": "masculino",
-    "traducao": "mesa"     
+    "traducao": "Mesa"     
       
  },
   
- {  "substantivo": "письмо",
+ {  "substantivo": "Письмо́",
     "genero": "neutro",
-    "traducao": "carta"       
+    "traducao": "Carta"       
       
- } 
+ };
+ 
+ {  "substantivo": "Сту́л",
+    "genero": "masculino",
+    "traducao": "Cadeira"       
+ },
+ 
+ {  "substantivo": "Буты́лка",
+    "genero": "feminino",
+    "traducao": "Garrafa"       
+ },
+ 
+ 
+ {  "substantivo": "Зда́ние",
+    "genero": "neutro",
+    "traducao": "Predio"       
+ },
+ 
+{  "substantivo": "Плáтье",
+    "genero": "neutro",
+    "traducao": "Vestido"       
+ },
+ 
+ {  "substantivo": "Дива́н",
+    "genero": "masculino",
+    "traducao": "Sofa"       
+ },
+ 
+ {  "substantivo": "Окно́",
+    "genero": "neutro",
+    "traducao": "Janela"       
+ },
+ 
+ {  "substantivo": "Ла́мпа",
+    "genero": "feminino",
+    "traducao": "Lampada"       
+ };
+ 
+ {  "substantivo": "Каранда́ш",
+    "genero": "masculino",
+    "traducao": "Lapis"       
+ }
+ 
+ 
 ]
