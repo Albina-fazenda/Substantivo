@@ -80,7 +80,11 @@
  {  "substantivo": "Магази́н",
     "genero": "masculino",
     "traducao": "Mercado"       
- }
+ },
  
+ {  "substantivo": "Поду́шка",
+    "genero": "feminino",
+    "traducao": "Travesseiro"       
+ } 
  
 ]
