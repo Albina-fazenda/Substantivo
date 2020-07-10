@@ -90,6 +90,11 @@
  {  "substantivo": "Поду́шка",
     "genero": "feminino",
     "traducao": "Travesseiro"       
+ },
+ 
+ {  "substantivo": "Де́рево",
+    "genero": "neutro",
+    "traducao": "Arvore"       
  } 
  
 ]
