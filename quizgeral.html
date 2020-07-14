@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<style>
+
+
+
+
+
+
+.battonm {
+    background-color: #2E9AFE; /* azul */
+    border: 1px solid blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.battonm:hover {
+    background-color: #045FB4;
+}
+.battonf {
+    background-color: #F78181; /* vermelho */
+    border: 1px solid red;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.battonf:hover {
+    background-color: #DF0101;
+}
+.battonn {
+    background-color: #31B404; /* verde */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.battonn:hover {
+    background-color: #cc6600;
+}
+
+.battonq {
+    background-color: #4d1a00; /* marrom */
+    border: 1px gray;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.battonq:hover {
+    background-color: #1a0900;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="pagination">
+  <a href="index.html" class="active">Home</a>
+  <a href="inputsubstantivo.html">Substantivos</a>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<p1> <button onclick="iniciaquiz()" type="button">Iniciar Quiz Substantivos</button></p1>
+
+<p5 id="pergunta"></p5><br>
+
+<p3 id="respostafinal"></p3><br>
+
+<p2 id="numerodapergunta"></p2><br>
+
+<p4> <button onclick="iniciaquiznovamente()" type="button">Iniciar Quiz novamente</button></p4><br>
+
+<p6> <button onclick="proximapergunta()" type="button">Próxima questão</button></p6><br>
+
+<p7 id="debugador"></p7><br>
+
+
+<script>
+  
+
+
+$("p4").hide();
+$("p6").hide();
+
+var numerodeperguntas=0;
+var meuscore = 0;
+var numerodapergunta=0;
+var textf1 = "nda";
+var tamanhoarray;
+
+function iniciaquiz(){
+  $("p1").hide();
+  $("p4").hide();
+
+
+  $("p5").show();
+
+
+
+  var escolhido;
+  var text = "";
+  var myObj=[];
+  var myRequest = new XMLHttpRequest();
+  myRequest.open('GET', "https://raw.githubusercontent.com/Albina-fazenda/repo2/master/substantivo.json");
+  myRequest.onload = function() {
+  myData=JSON.parse(myRequest.responseText);
+  console.log(myData);
+  sorteio(myData);
+}
+
+myRequest.send();
+
+
+}
+
+function sorteio(myObj){
+
+    
+	
+    var questao = [];
+    var vresposta="";
+    var textresposta = [];
+    var espacoresposta = [];
+    var respostaerrada = [];
+    var textobotao = [];
+    var i=0;
+
+	    do{
+            
+            if(i==0){
+                
+                var escolhidopergunta = Math.floor(Math.random() * myObj.length);
+                var textpergunta = myObj[escolhidopergunta] ;
+                var espacopergunta = textpergunta.indexOf(" ");
+                var pergunta = textpergunta.slice(0,espacopergunta);
+                var respostacerta = textpergunta.slice(espacopergunta+1,textpergunta.length);
+                document.getElementById("pergunta").innerHTML = pergunta;
+                questao.push(respostacerta);
+                myObj.splice(escolhidopergunta,1);
+            }
+        
+        
+	
+	  
+
+            
+	        if(i>0 & i<3){
+                var escolhidoresposta = Math.floor(Math.random() * myObj.length);
+                var textresposta = myObj[escolhidoresposta];
+                var espacoresposta = textresposta.indexOf(" ");
+                questao.push(textresposta.slice(espacoresposta+1,textresposta.length));
+                myObj.splice(escolhidoresposta,1);
+            }
+
+            i++;
+            
+        }
+        while( i < 3);
+    
+     
+        
+    for(ii = 0; ii != 3; ii++){
+	
+		var i = Math.floor(Math.random() * questao.length);
+		var btn = document.createElement("button");
+		var clas = document.createAttribute("class");
+		var t = document.createTextNode(questao[i]);
+		var clik = document.createAttribute("onclick");
+
+		if (questao[i] == respostacerta){
+		    clik.value = "funrespostafinal(1)";
+            
+		}
+		else{
+			clik.value = "funrespostafinal(0)";
+		}
+
+		clas.value="battonq";
+		questao.splice(i,1);
+
+       
+		btn.setAttributeNode(clas);
+		btn.setAttributeNode(clik); 
+		btn.appendChild(t);
+		document.body.appendChild(btn);
+    }
+
+}
+
+function iniciaquiznovamente(){
+
+
+numerodeperguntas=0;
+meuscore = 0;
+numerodapergunta=0
+$("p5").hide();
+$("p3").hide();
+$("p2").hide();
+this.iniciaquiz();
+
+}
+
+function proximapergunta(){
+
+    
+	$("p5").hide();
+	$("p3").hide();
+	$("p2").hide();
+	$("p6").hide();
+	this.iniciaquiz();
+}
+
+function funrespostafinal(vresposta) {
+    
+    $("p2").show();
+    $("p3").show();
+
+    $("button").remove(".battonq");	
+    numerodeperguntas++;
+    numerodapergunta++;
+    $("p6").show();
+	
+	if (vresposta == 1){
+		textf1="certo";
+		meuscore++;
+	}	
+	else{
+		textf1="errado";
+	}
+	
+	if (numerodeperguntas == 4){
+       $("p4").show();
+	   $("p6").hide();
+       textonumerodapergunta = "<br> acabou !!! você acertou " + meuscore + " do total de " + numerodeperguntas + " perguntas feitas.";
+       document.getElementById("numerodapergunta").innerHTML = textonumerodapergunta;
+	   
+    }
+	else{
+		if (meuscore == 0){
+			textonumerodapergunta = "<br> pergunta numero " + numerodapergunta + " e você não acertou nenhuma pergunta até agora!";
+		}
+		else{
+			if (meuscore == 1) {
+				 textonumerodapergunta = "<br> pergunta numero " + numerodapergunta + " e você acertou " + meuscore + "  pergunta até agora!";
+			}
+			else{
+				textonumerodapergunta = "<br> pergunta numero " + numerodapergunta + " e você acertou " + meuscore + "  perguntas até agora!";
+			}
+        }
+	
+    }
+	
+	document.getElementById("numerodapergunta").innerHTML = textonumerodapergunta;
+	document.getElementById("respostafinal").innerHTML = textf1;
+   
+}    
+
+
+
+
+
+
+	
+
+</script>	
+</body>
+</html>
