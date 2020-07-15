@@ -72,7 +72,7 @@
     "traducao": "Faca"       
  },
  
-  {  "substantivo": "Крова́ть",
+ {  "substantivo": "Крова́ть",
     "genero": "feminino",
     "traducao": "Cama"       
  },
@@ -80,6 +80,11 @@
  {  "substantivo": "Магази́н",
     "genero": "masculino",
     "traducao": "Mercado"       
+ },
+ 
+ {  "substantivo": "Таре́лка",
+    "genero": "feminino",
+    "traducao": "Prato"       
  },
  
  {  "substantivo": "Рестора́н",
@@ -96,6 +101,16 @@
     "genero": "feminino",
     "traducao": "Apartamento"       
  },
+ 
+  { "substantivo": "Ло́жка",
+    "genero": "feminino",
+    "traducao": "Colher"       
+  },
+ 
+  { "substantivo": "Ви́лка",
+    "genero": "feminino",
+    "traducao": "Garfo"       
+  },
  
  {  "substantivo": "Де́рево",
     "genero": "neutro",
