@@ -29,7 +29,7 @@
  
  {  "substantivo": "Зда́ние",
     "genero": "neutro",
-    "traducao": "Predio"       
+    "traducao": " Prédio"       
  },
  
  {  "substantivo": "Плáтье",
@@ -49,12 +49,12 @@
  
  {  "substantivo": "Ла́мпа",
     "genero": "feminino",
-    "traducao": "Lampada"       
+    "traducao": "Lâmpada"       
  },
  
  {  "substantivo": "Каранда́ш",
     "genero": "masculino",
-    "traducao": "Lapis"       
+    "traducao": "Lápis"       
  },
  
  {  "substantivo": "Ме́сто",
@@ -99,7 +99,7 @@
  
  {  "substantivo": "Де́рево",
     "genero": "neutro",
-    "traducao": "Arvore"       
+    "traducao": "Árvore"       
  } 
  
 ]
