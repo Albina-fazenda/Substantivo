@@ -107,19 +107,29 @@
     "traducao": "Copo"       
  },
  
-  { "substantivo": "Ло́жка",
+ { "substantivo": "Ло́жка",
     "genero": "feminino",
     "traducao": "Colher"       
-  },
+ },
  
-  { "substantivo": "Ви́лка",
+ { "substantivo": "Ви́лка",
     "genero": "feminino",
     "traducao": "Garfo"       
-  },
+ },
+ 
+ {  "substantivo": "Го́род",
+    "genero": "masculino",
+    "traducao": "Cidade"       
+ },
  
  {  "substantivo": "Де́рево",
     "genero": "neutro",
     "traducao": "Árvore"       
- } 
+ },
+ 
+ { "substantivo": "У́лица",
+    "genero": "feminino",
+    "traducao": "Rua"       
+ }
  
 ]
