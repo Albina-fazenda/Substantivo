@@ -1,90 +1,108 @@
 [
  {  "substantivo": "Кни́га",
     "genero": "feminino",
-    "traducao": "Livro"       
+    "traducao": "Livro",
+    "som": "Книга"
  },
   
  {  "substantivo": "Сто́л",
     "genero": "masculino",
-    "traducao": "Mesa"     
-      
+    "traducao": "Mesa",     
+    "som": "Стол"
  },
   
  {  "substantivo": "Письмо́",
     "genero": "neutro",
-    "traducao": "Carta"       
+    "traducao": "Carta",
+    "som": "Письмо"
       
  },
  
  {  "substantivo": "Сту́л",
     "genero": "masculino",
-    "traducao": "Cadeira"       
+    "traducao": "Cadeira",
+    "som": "Стул"
  },
  
  {  "substantivo": "Буты́лка",
     "genero": "feminino",
-    "traducao": "Garrafa"       
+    "traducao": "Garrafa",
+    "som": "Бутылка"    
  },
  
  
  {  "substantivo": "Зда́ние",
     "genero": "neutro",
-    "traducao": " Prédio"       
+    "traducao": " Prédio",
+    "som": "Здание"
  },
  
  {  "substantivo": "Плáтье",
     "genero": "neutro",
-    "traducao": "Vestido"       
+    "traducao": "Vestido",
+    "som": "Платье"
  },
  
  {  "substantivo": "Дива́н",
     "genero": "masculino",
-    "traducao": "Sofá"       
+    "traducao": "Sofá",
+    "som": "Дива́н"
  },
  
  {  "substantivo": "Окно́",
     "genero": "neutro",
-    "traducao": "Janela"       
+    "traducao": "Janela",
+    "som": "Окно"
  },
  
  {  "substantivo": "Ла́мпа",
     "genero": "feminino",
-    "traducao": "Lâmpada"       
+    "traducao": "Lâmpada", 
+    "som": "Лампа"
  },
  
  {  "substantivo": "Каранда́ш",
     "genero": "masculino",
-    "traducao": "Lápis"       
+    "traducao": "Lápis",
+    "som": "Карандаш"
  },
  
  {  "substantivo": "Ме́сто",
     "genero": "neutro",
-    "traducao": "Lugar"       
+    "traducao": "Lugar",
+    "som": "Место"
+  
  },
  
  {  "substantivo": "Ко́мната",
     "genero": "feminino",
-    "traducao": "Quarto"       
+    "traducao": "Quarto",
+    "som": "Комната"
  },
  
  {  "substantivo": "Но́ж",
     "genero": "masculino",
-    "traducao": "Faca"       
+    "traducao": "Faca",
+    "som": "Нож"
  },
  
  {  "substantivo": "Крова́ть",
     "genero": "feminino",
-    "traducao": "Cama"       
+    "traducao": "Cama",
+    "som": "Кровать"
  },
  
  {  "substantivo": "Магази́н",
     "genero": "masculino",
-    "traducao": "Mercado"       
+    "traducao": "Mercado",
+    "som": "Магазин"
+
  },
  
  {  "substantivo": "Таре́лка",
     "genero": "feminino",
-    "traducao": "Prato"       
+    "traducao": "Prato",
+    "som": "Тарелка"
  },
  
  {  "substantivo": "Рестора́н",
