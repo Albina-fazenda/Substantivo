@@ -107,47 +107,56 @@
  
  {  "substantivo": "Рестора́н",
     "genero": "masculino",
-    "traducao": "Restaurante"       
+    "traducao": "Restaurante",
+    "som": "Ресторан"
  },
  
  {  "substantivo": "Поду́шка",
     "genero": "feminino",
-    "traducao": "Travesseiro"       
+    "traducao": "Travesseiro",
+    "som": "Подушка"
  },
  
  {  "substantivo": "Кварти́ра",
     "genero": "feminino",
-    "traducao": "Apartamento"       
+    "traducao": "Apartamento",
+    "som": "Квартира"
  },
  
  {  "substantivo": "Стака́н",
     "genero": "masculino",
-    "traducao": "Copo"       
+    "traducao": "Copo",
+    "som": "Стакан"
  },
  
  { "substantivo": "Ло́жка",
     "genero": "feminino",
-    "traducao": "Colher"       
+    "traducao": "Colher",
+    "som": "Ложка"
  },
  
  { "substantivo": "Ви́лка",
     "genero": "feminino",
-    "traducao": "Garfo"       
+    "traducao": "Garfo",
+    "som": "Вилка"
  },
  
  {  "substantivo": "Го́род",
     "genero": "masculino",
-    "traducao": "Cidade"       
+    "traducao": "Cidade",
+    "som": "Город"
  },
  
  {  "substantivo": "Де́рево",
     "genero": "neutro",
-    "traducao": "Árvore"       
+    "traducao": "Árvore",
+    "som": "Дерево"
  },
  
  { "substantivo": "У́лица",
     "genero": "feminino",
-    "traducao": "Rua"       
+    "traducao": "Rua",
+    "som": "Улица"
  }
  
 ]
